@@ -6,18 +6,18 @@ const LIBRARY_VERSION = '5.3.0';
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://docs-placeholder.example.com',
+	site: 'https://ts-yt-music-unofficial.vercel.app/',
 	integrations: [
 		starlight({
-			title: `ytmusic-api Docs v${LIBRARY_VERSION}`,
+			title: `ts-ytmusic-api Docs v${LIBRARY_VERSION}`,
 			description:
-				'Official documentation for ytmusic-api, a type-safe YouTube Music API wrapper.',
+				'Official documentation for ts-ytmusic-api-unofficial, a type-safe YouTube Music API wrapper.',
 			lastUpdated: true,
 			editLink: {
 				baseUrl: 'https://github.com/zS1L3NT/ts-npm-ytmusic-api/edit/main/',
 			},
-			pagefind: false,
-			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/zS1L3NT/ts-npm-ytmusic-api' }],
+			pagefind: true,
+			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/zS1L3NT/ts-npm-ytmusic-api' }, { icon: 'npm', label: 'npm', href: 'https://www.npmjs.com/package/ytmusic-api' }],
 			sidebar: [
 				{
 					label: 'Getting Started',
