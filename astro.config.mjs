@@ -6,19 +6,35 @@ import starlight from '@astrojs/starlight';
 export default defineConfig({
 	integrations: [
 		starlight({
-			title: 'My Docs',
-			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
+			title: 'ytmusic-api Docs',
+			description:
+				'Official documentation for ytmusic-api, a type-safe YouTube Music API wrapper.',
+			pagefind: false,
+			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/zS1L3NT/ts-npm-ytmusic-api' }],
 			sidebar: [
 				{
-					label: 'Guides',
-					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', slug: 'guides/example' },
-					],
+					label: 'Getting Started',
+					autogenerate: { directory: 'getting-started' },
 				},
 				{
-					label: 'Reference',
-					autogenerate: { directory: 'reference' },
+					label: 'API Reference',
+					autogenerate: { directory: 'api' },
+				},
+				{
+					label: 'TypeScript',
+					autogenerate: { directory: 'typescript' },
+				},
+				{
+					label: 'Guides',
+					autogenerate: { directory: 'guides' },
+				},
+				{
+					label: 'Troubleshooting',
+					autogenerate: { directory: 'troubleshooting' },
+				},
+				{
+					label: 'Limitations',
+					autogenerate: { directory: 'limitations' },
 				},
 			],
 		}),
