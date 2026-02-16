@@ -18,6 +18,23 @@ sidebar:
 - `HomeSection`
 - `ThumbnailFull`
 
+## Important export caveat for v5.3.0
+
+`getUpNexts()` is declared to return `UpNextsDetails[]` in the class source, but `UpNextsDetails` is not exported from the package entrypoint (`src/index.ts`) in `v5.3.0`.
+
+If you need to type this response in app code today, use a local interface based on observed runtime shape.
+
+```ts
+type UpNextItemRuntime = {
+  type: "SONG";
+  videoId: string;
+  title: string;
+  artists: string;
+  duration: string;
+  thumbnail: string;
+};
+```
+
 ## Working with SearchResult
 
 `SearchResult` is a discriminated union keyed by `type`.

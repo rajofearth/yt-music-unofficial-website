@@ -7,6 +7,8 @@ sidebar:
 
 All methods are instance methods on `YTMusic`.
 
+**Docs target version:** `ytmusic-api v5.3.0`
+
 ```ts
 const ytmusic = new YTMusic();
 await ytmusic.initialize();

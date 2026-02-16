@@ -38,6 +38,12 @@ getUpNexts(videoId: string): Promise<UpNextsDetails[]>
 
 Fetches recommended up-next tracks for a song context.
 
+Current source caveat for `v5.3.0`:
+
+- the method signature points to `UpNextsDetails[]`
+- runtime objects currently include keys like `title`, `artists` (string), `duration` (string), and `thumbnail` (string URL)
+- this differs from the `UpNextsDetails` schema in `src/types.ts`
+
 Validation:
 
 - same `videoId` validation

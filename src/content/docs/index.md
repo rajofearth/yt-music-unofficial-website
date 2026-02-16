@@ -3,6 +3,8 @@ title: ytmusic-api Documentation
 description: Official documentation for ytmusic-api, a type-safe YouTube Music API wrapper.
 ---
 
+**Docs target version:** `ytmusic-api v5.3.0`
+
 `ytmusic-api` is an unofficial, type-safe YouTube Music API wrapper for Node.js and TypeScript.
 
 Use these docs to:
