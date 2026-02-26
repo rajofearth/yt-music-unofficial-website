@@ -1,49 +1,57 @@
-# Starlight Starter Kit: Basics
+# ytmusic-api Documentation
 
 [![Built with Starlight](https://astro.badg.es/v2/built-with-starlight/tiny.svg)](https://starlight.astro.build)
+[![Type-Safe API](https://img.shields.io/badge/API-Type--Safe-blue)](https://github.com/ytmusic-api/ytmusic-api)
 
-```
-pnpm create astro@latest -- --template starlight
-```
+This repository contains the source code for the documentation of `ytmusic-api`, an unofficial, type-safe YouTube Music API wrapper for Node.js and TypeScript.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+The live documentation is built using [Astro](https://astro.build) and [Starlight](https://starlight.astro.build).
 
-## 🚀 Project Structure
+## 🚀 Getting Started
 
-Inside of your Astro + Starlight project, you'll see the following folders and files:
+To run the documentation site locally:
 
-```
-.
-├── public/
-├── src/
-│   ├── assets/
-│   ├── content/
-│   │   └── docs/
-│   └── content.config.ts
-├── astro.config.mjs
-├── package.json
-└── tsconfig.json
-```
+1.  **Install dependencies:**
+    ```bash
+    pnpm install
+    ```
 
-Starlight looks for `.md` or `.mdx` files in the `src/content/docs/` directory. Each file is exposed as a route based on its file name.
+2.  **Start the development server:**
+    ```bash
+    pnpm dev
+    ```
+    The site will be available at `http://localhost:4321`.
 
-Images can be added to `src/assets/` and embedded in Markdown with a relative link.
+3.  **Build for production:**
+    ```bash
+    pnpm build
+    ```
 
-Static assets, like favicons, can be placed in the `public/` directory.
+## 📁 Project Structure
+
+- `src/content/docs/`: Contains the Markdown files for the documentation.
+  - `api/`: Reference for all public methods (songs, artists, albums, etc.).
+  - `getting-started/`: Installation and quick-start guides.
+  - `guides/`: Practical workflows and best practices.
+  - `typescript/`: Documentation for exported types and patterns.
+- `public/`: Static assets.
+
+## 📝 Documentation Target
+
+These docs currently target **`ytmusic-api v5.3.0`**.
+
+If you notice any inaccuracies or would like to add new examples, feel free to open a Pull Request!
 
 ## 🧞 Commands
 
-All commands are run from the root of the project, from a terminal:
+| Command | Action |
+| :--- | :--- |
+| `pnpm install` | Installs dependencies |
+| `pnpm dev` | Starts local dev server at `localhost:4321` |
+| `pnpm build` | Build the production site to `./dist/` |
+| `pnpm preview` | Preview the build locally |
+| `pnpm astro ...` | Run Astro CLI commands |
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `pnpm install`             | Installs dependencies                            |
-| `pnpm dev`             | Starts local dev server at `localhost:4321`      |
-| `pnpm build`           | Build your production site to `./dist/`          |
-| `pnpm preview`         | Preview your build locally, before deploying     |
-| `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `pnpm astro -- --help` | Get help using the Astro CLI                     |
+## ⚖️ License
 
-## 👀 Want to learn more?
-
-Check out [Starlight’s docs](https://starlight.astro.build/), read [the Astro documentation](https://docs.astro.build), or jump into the [Astro Discord server](https://astro.build/chat).
+This documentation is licensed under the MIT License.
